@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking the external CSS file to style the application -->
+</head>
+<body>
+    <div class="container"> <!-- Main container for the entire To-Do App -->
+        <h1>To-Do App</h1> <!-- Heading for the To-Do App -->
+        <div class="input-container"> <!-- Container for the input field and "Add" button -->
+            <input type="text" id="task-input" placeholder="Add a new task" required autofocus> <!-- Input field to enter new tasks -->
+            <button id="add-btn">Add</button> <!-- "Add" button to add new tasks -->
+        </div>
+        <div>
+            <p id="total-tasks"><span>Total tasks:</span> <span id="task-count-value">0</span></p> <!-- Paragraph to display the total number of tasks -->
+        </div>
+        <ul id="task-list"></ul> <!-- Unordered list to display the list of tasks -->
+        <div class="task-stats"> <!-- Container for "Check All" and "Delete All" buttons -->
+            <button id="check-all-btn">Check All</button> <!-- "Check All" button to mark all tasks as completed -->
+            <button id="delete-all-btn">Delete All</button> <!-- "Delete All" button to delete all tasks -->
+        </div>
+    </div>
+    <script src="script.js"></script> <!-- Linking the external JavaScript file for dynamic functionality -->
+</body>
+</html>

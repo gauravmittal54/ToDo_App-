@@ -1,0 +1,239 @@
+/* Importing the Roboto font styles from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Styling for the entire body of the webpage */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Set the font family to Roboto */
+    background-color: #f5f5dc; /* Set the background color */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Styling for the main container of the To-Do App */
+.container {
+    max-width: 700px; /* Set the maximum width of the container */
+    margin: 50px auto; /* Center the container with 50px top margin */
+    background-color: #ffffff; /* Set the background color of the container */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 15px; /* Rounded corners for the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow effect on hover */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+/* Apply a deeper shadow effect on the container when hovered */
+.container:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the heading of the To-Do App */
+h1 {
+    text-align: center; /* Center the heading text */
+    color: #333; /* Set the text color to a dark gray */
+    margin-bottom: 20px; /* Add bottom margin to create space between the heading and content */
+    font-size: 24px; /* Set the font size of the heading */
+    transition: color 0.3s ease; /* Smooth transition for the text color on hover */
+}
+
+/* Styling for the input container that holds the input field and "Add" button */
+.input-container {
+    display: flex; /* Display the elements in a row */
+    margin-bottom: 20px; /* Add bottom margin to create space between the input container and the next element */
+    align-items: center; /* Align the elements vertically in the center */
+}
+
+/* Styling for the paragraph inside the input container */
+.input-container p {
+    font-style: italic; /* Italicize the text */
+    font-size: 14px; /* Set the font size of the paragraph */
+    color: #888; /* Set the text color to a light gray */
+    margin-right: 5px; /* Add right margin to create space between the paragraph and the input field */
+}
+
+/* Styling for the input field */
+.input-container input {
+    flex-grow: 1; /* Allow the input field to grow and take up remaining space */
+    padding: 10px; /* Add padding inside the input field */
+    border: 2px solid #ccc; /* Set the border of the input field with a light gray color */
+    border-radius: 10px; /* Rounded corners for the input field */
+    outline: none; /* Remove the default focus outline */
+    font-size: 16px; /* Set the font size of the input field */
+    transition: border-color 0.3s ease; /* Smooth transition for the border color on focus */
+}
+
+/* Apply a different border color to the input field on focus */
+.input-container input:focus {
+    border-color: #4caf50; /* Set the border color to a green color on focus */
+}
+
+/* Styling for the "Add" button */
+.input-container button {
+    background-color: #4caf50; /* Set the background color of the button to green */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove the button border */
+    border-radius: 10px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    cursor: pointer; /* Set the cursor to a pointer on hover */
+    margin-left: 10px; /* Add left margin to create space between the input field and button */
+    font-size: 16px; /* Set the font size of the button text */
+    transition: background-color 0.3s ease; /* Smooth transition for the background color on hover */
+}
+
+/* Apply a darker green background color to the "Add" button on hover */
+.input-container button:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the list of tasks */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding from the list */
+    max-height: 300px; /* Set the maximum height of the list to allow scrolling */
+    overflow-y: auto; /* Add vertical scrolling for overflowed content */
+}
+
+/* Styling for the scrollbar within the list */
+ul::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+}
+
+ul::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+ul::-webkit-scrollbar-thumb {
+    background: #888; /* Set the color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+/* Styling for each task item in the list */
+li {
+    padding: 15px; /* Add padding inside each task item */
+    border-radius: 10px; /* Rounded corners for each task item */
+    display: flex; /* Display the elements in a row */
+    align-items: center; /* Align the elements vertically in the center */
+    background-color: #f9f9f9; /* Set the background color of each task item */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    margin-bottom: 15px; /* Add bottom margin to create space between task items */
+    transition: background-color 0.3s ease; /* Smooth transition for the background color on hover */
+}
+
+/* Remove bottom margin for the last task item in the list */
+li:last-child {
+    margin-bottom: 0;
+}
+
+/* Styling for the checkbox input within each task item */
+li input[type="checkbox"] {
+    margin-right: 10px; /* Add right margin to create space between the checkbox and task text */
+}
+
+/* Styling for the label containing the task text */
+li label {
+    flex-grow: 1; /* Allow the label to grow and take up remaining space */
+    font-size: 16px; /* Set the font size of the task text */
+    color: #333; /* Set the text color to a dark gray */
+    overflow-wrap: break-word; /* Allow task text to wrap to the next line if needed */
+    word-break: break-all; /* Break words at any character if they exceed the container width */
+    margin-right: 10px;
+}
+
+li .delete-btn {
+    background-color: #f44336; /* Set the background color of the delete button to red */
+    color: #fff; /* Set the text color of the delete button to white */
+    border: none; /* Remove the button border */
+    border-radius: 10px; /* Rounded corners for the delete button */
+    padding: 7px 14px; /* Reduce the padding to make the delete button smaller */
+    cursor: pointer; /* Set the cursor to a pointer on hover */
+    outline: none; /* Remove the default focus outline */
+    transition: background-color 0.3s ease; /* Smooth transition for the background color on hover */
+    font-size: 14px; /* Set the font size of the delete button text */
+}
+
+/* Apply a darker red background color to the delete button on hover */
+li .delete-btn:hover {
+    color: #d32f2f;
+}
+
+/* Styling for the task statistics section at the bottom */
+.task-stats {
+    display: flex; /* Display the elements in a row */
+    align-items: center; /* Align the elements vertically in the center */
+    justify-content: flex-end; /* Align the elements to the right */
+    margin-top: 20px; /* Add top margin to create space between the task list and statistics */
+}
+
+/* Styling for the buttons in the task statistics section */
+.task-stats button {
+    margin-left: 10px; /* Add left margin to create space between the buttons */
+    border-radius: 10px; /* Rounded corners for the buttons */
+    padding: 10px 20px; /* Add padding inside the buttons */
+    transition: background-color 0.3s ease; /* Smooth transition for the background color on hover */
+}
+
+/* Apply opacity to the buttons on hover to create a subtle effect */
+.task-stats button:hover {
+    opacity: 0.8;
+}
+
+/* Styling for completed tasks (text with a strikethrough) */
+.completed {
+    text-decoration: line-through; /* Apply a strikethrough effect to the completed task text */
+    color: #888; /* Set the text color to a light gray */
+}
+
+/* Styling for the "Check All" button */
+#check-all-btn {
+    background-color: #4caf50; /* Set the background color of the button to green */
+    color: #fff; /* Set the text color to white */
+    border-radius: 10px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition for the background color on hover */
+}
+
+/* Apply a darker green background color to the "Check All" button on hover */
+#check-all-btn:hover {
+    background-color: #45a049;
+}
+
+/* Styling for the "Delete All" button */
+#delete-all-btn {
+    background-color: #f44336; /* Set the background color of the button to red */
+    color: #fff; /* Set the text color to white */
+    border-radius: 10px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Add padding inside the button */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: background-color 0.3s ease; /* Smooth transition for the background color on hover */
+}
+
+/* Apply a darker red background color to the "Delete All" button on hover */
+#delete-all-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Styling for the task count value (number of tasks) */
+#task-count-value {
+    font-weight: bold; /* Set the font weight to bold */
+    font-size: 18px; /* Set the font size of the task count value */
+}
+
+/* ... (existing CSS rules) ... */
+
+/* Apply a scale and shadow effect to the task item on hover */
+li:hover {
+    transform: scale(1.05); /* Enlarge the task on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a deeper shadow effect */
+    background-color: #f0f0f0; /* Slightly darken the background color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Additional padding for the task list */
+#task-list {
+    padding: 20px;
+}
