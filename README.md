@@ -39,6 +39,6 @@ The ToDo List App utilizes the following open-source libraries and resources:
 Font: Roboto by Google Fonts
 
 # Author
-The ToDo List App is developed and maintained by Your Gaurav Mittal.
+The ToDo List App is developed and maintained by Gaurav Mittal.
 
 Thank you for using ToDo List App! Stay organized and productive! 😊
