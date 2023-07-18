@@ -1,5 +1,6 @@
 # ToDo_App-
-![image](https://github.com/gauravmittal54/ToDo_App-/assets/61792468/4fe175e9-30b2-4c88-bd9b-29e3277160fe)
+![image](https://github.com/gauravmittal54/ToDo_App-/assets/61792468/3bfbc389-18dc-4420-9f8e-e43525dfd3d9)
+
 
 1.Add Todo Item: At the top of the app, you will find a text box where you can enter a new todo item. Clicking the "Add" button will add the item to the list.
 
