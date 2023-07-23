@@ -18,9 +18,12 @@ Experience the ToDo List App in action with the live demo: ToDo List App Live De
 
 # Installation
 Clone the repository to your local machine:
+
 git clone https://github.com/your-username/todo-list-app.git
+
 Navigate to the project folder:
 cd todo-list-app
+
 Open index.html in your web browser.
 
 # Customization
